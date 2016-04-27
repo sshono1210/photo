@@ -19,6 +19,5 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get ('/photo', function(){
-    return view('photo.photo');
-});
+Route::get('/photo/register', PhotoController::class.'@register');
+Route::get('/photo/upload', PhotoController::class.'@upload');
