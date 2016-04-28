@@ -17,7 +17,6 @@ class CreatePhotosTable extends Migration
             $table->string('name');
             $table->string('comment');
             $table->string('tag');
-            $table->string('path');
             $table->timestamps();
         });
 

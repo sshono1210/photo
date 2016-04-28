@@ -8,6 +8,6 @@ class Photo extends Model
 
     protected $dates = ['created_at', 'updated_at'];
 
-    protected $fillable = ['name', 'comment', 'tag', 'path'];
+    protected $fillable = ['name', 'comment', 'tag'];
 
 }
