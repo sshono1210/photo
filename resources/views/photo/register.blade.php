@@ -13,9 +13,10 @@
                     <form class="form-horizontal" method="GET" action="/photo/upload">
                         {!! csrf_field() !!}
 
-                        <div class="col-md-12" style="margin-left: 80px;margin-bottom: 20px;;">
-                            <div class="col-md-offset-3">
-                                <img src="http://placehold.it/300x200">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">&nbsp;</label>
+                            <div class="col-md-6">
+                                <input type="file" name="file">
                             </div>
                         </div>
 
@@ -37,20 +38,6 @@
                             <label class="col-md-4 control-label">タグ</label>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="tag">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">保存場所</label>
-                            <div class="col-md-6">
-                                <select name="path" class="form-control">
-                                    <option value="null">&nbsp;</option>
-                                    <option value="chatbox">chatbox</option>
-                                    <option value="Hokkaido">北海道旅行</option>
-                                    <option value="KFUGconf">関西フロントエンドカンファレンス</option>
-                                    <option value="moku">もくもく会</option>
-                                    <option value="mosha">もしゃもしゃ会</option>
-                                </select>
                             </div>
                         </div>
 
